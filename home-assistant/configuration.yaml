@@ -1,0 +1,60 @@
+homeassistant:
+  name: Home
+  latitude: !include latitude.yaml
+  longitude: !include longitude.yaml
+  temperature_unit: C
+  time_zone: Europe/Amsterdam
+  customize: !include customize.yaml
+
+device_tracker: !include device_tracker.yaml
+mqtt: !include mqtt.yaml
+group: !include groups.yaml
+
+media_player:
+  platform: cast
+  host: 192.168.50.80
+
+light:
+  platform: limitlessled
+  host: 192.168.50.81
+  group_1_name: Living Room
+  group_2_name: Office
+
+switch 1:
+  platform: transmission
+  host: 192.168.50.9
+
+sensor 1:
+  platform: mqtt
+  state_topic: "sensor/temp01"
+  name: "Temperature living room"
+  qos: 0
+  unit_of_measurement: "C"
+
+sensor 2:
+  platform: mqtt
+  state_topic: "sensor/humi01"
+  name: "Humidity living room"
+  qos: 0
+  unit_of_measurement: "%"
+
+sensor 3:
+  platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+sensor 4:
+  platform: transmission
+  host: 192.168.50.9
+  monitored_variables:
+    - current_status
+    - download_speed
+    - upload_speed
+
+history:
+
+logbook:
+
+sun:
