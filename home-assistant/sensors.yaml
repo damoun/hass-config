@@ -1,0 +1,24 @@
+- platform: mqtt
+  state_topic: "sensor/temp01"
+  name: "Temperature living room"
+  qos: 0
+  unit_of_measurement: "C"
+
+- platform: mqtt
+  state_topic: "sensor/humi01"
+  name: "Humidity living room"
+  qos: 0
+  unit_of_measurement: "%"
+
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: transmission
+  host: 192.168.50.9
+  monitored_variables:
+    - current_status
+    - download_speed
+    - upload_speed

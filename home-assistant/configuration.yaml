@@ -24,34 +24,7 @@ switch 1:
   platform: transmission
   host: 192.168.50.9
 
-sensor 1:
-  platform: mqtt
-  state_topic: "sensor/temp01"
-  name: "Temperature living room"
-  qos: 0
-  unit_of_measurement: "C"
-
-sensor 2:
-  platform: mqtt
-  state_topic: "sensor/humi01"
-  name: "Humidity living room"
-  qos: 0
-  unit_of_measurement: "%"
-
-sensor 3:
-  platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-
-sensor 4:
-  platform: transmission
-  host: 192.168.50.9
-  monitored_variables:
-    - current_status
-    - download_speed
-    - upload_speed
+sensor: !include sensors.yaml
 
 history:
 
