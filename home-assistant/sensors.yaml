@@ -10,6 +10,18 @@
   qos: 0
   unit_of_measurement: "%"
 
+- platform: mqtt
+  state_topic: "devices/e0c74fe0/temperature/temperature"
+  name: "Temperature bedroom"
+  qos: 0
+  unit_of_measurement: "C"
+
+- platform: mqtt
+  state_topic: "devices/e0c74fe0/humidity/humidity"
+  name: "Humidity bedroom"
+  qos: 0
+  unit_of_measurement: "%"
+
 - platform: speedtest
   monitored_conditions:
     - ping

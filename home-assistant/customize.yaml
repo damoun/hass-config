@@ -8,6 +8,12 @@ sensor.temperature_living_room:
 sensor.humidity_living_room:
   friendly_name: Humidity
   icon: mdi:water-percent
+sensor.temperature_bedroom:
+  friendly_name: Temperature
+  icon: mdi:temperature-celsius
+sensor.humidity_bedroom:
+  friendly_name: Humidity
+  icon: mdi:water-percent
 switch.transmission_turtle_mode:
   friendly_name: Slow mode
   icon: mdi:speedometer
