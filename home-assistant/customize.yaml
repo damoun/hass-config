@@ -28,3 +28,5 @@ sensor.speedtest_ping:
 sensor.speedtest_upload:
   friendly_name: Upload speed
   icon: mdi:upload
+group.living_room:
+  friendly_name: Living Room
