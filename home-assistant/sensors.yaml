@@ -1,11 +1,11 @@
 - platform: mqtt
-  state_topic: "sensor/temp01"
+  state_topic: "devices/fd8b87e0/temperature/temperature"
   name: "Temperature living room"
   qos: 0
   unit_of_measurement: "C"
 
 - platform: mqtt
-  state_topic: "sensor/humi01"
+  state_topic: "devices/fd8b87e0/humidity/humidity"
   name: "Humidity living room"
   qos: 0
   unit_of_measurement: "%"
