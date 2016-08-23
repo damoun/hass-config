@@ -1,2 +1,5 @@
-home-assistant/latitude.yaml
-home-assistant/longitude.yaml
+home-assistant/secrets.yaml
+home-assistant/.HA_VERSION
+home-assistant/deps
+home-assistant/home-assistant_v2.db
+home-assistant/home-assistant.log
