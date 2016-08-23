@@ -30,6 +30,19 @@ switch 1:
 
 sensor: !include sensors.yaml
 
+automation:
+  - alias: Turn off the light of the office when playing game
+    trigger:
+      platform: state
+      entity_id: 'sensor.steam_76561197972498237'
+      state: 'Online'
+    conditions:
+      condition: template
+      value_template: '{{ not is_state_attr("sensor.steam_76561197972498237", "Game", "None") }}'
+    action:
+      service: light.turn_off
+      entity_id: light.office
+
 history:
 
 logbook:
