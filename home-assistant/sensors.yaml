@@ -29,8 +29,13 @@
     - upload
 
 - platform: transmission
-  host: 192.168.50.9
+  host: !secret transmission_host
   monitored_variables:
     - current_status
     - download_speed
     - upload_speed
+
+- platform: steam_online
+  api_key: !secret steam_api_key
+  accounts:
+    - 76561197972498237
