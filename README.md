@@ -6,7 +6,7 @@ My [Home Assistant](https://home-assistant.io) configuration used at home.
 
 # How to test
 
-You can test the configuration of [Home Assistant](https://home-assistant.io) in a virtualenv :
+You can test the configuration of [Home Assistant](https://www.home-assistant.io/docs/installation/virtualenv/) in a virtualenv :
 
 ```
  mkvirtualenv --python=/usr/bin/python3 hass-config
