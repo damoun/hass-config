@@ -1,5 +1,9 @@
-home-assistant/secrets.yaml
-home-assistant/.HA_VERSION
-home-assistant/deps
-home-assistant/home-assistant_v2.db
-home-assistant/home-assistant.log
+secrets.yaml
+deps
+home-assistant_v2.db
+home-assistant_v2.db-shm
+home-assistant_v2.db-wal
+home-assistant.log*
+tts
+.storage
+.HA_VERSION
