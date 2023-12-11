@@ -1,0 +1,4 @@
+---
+home_modes_away_mode:
+  name: Away mode
+  icon: mdi:home-account

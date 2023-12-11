@@ -1,0 +1,6 @@
+home_assistant: !include home-assistant/package.yaml
+home_assistant_integrations: !include_dir_merge_named home-assistant/integrations
+
+system: !include system/package.yaml
+
+apartment: !include zones/apartment/package.yaml
